@@ -50,6 +50,7 @@ footer {
     padding: 0.5em 0;
     text-align: center;
     font-size: 0.8em; /* Reduced font size */
+    line-height: 1.2em; /* Adjusted line-height for less spacing */
     position: relative; /* Positioned normally, stays at the bottom of the content */
     width: 100%;
     left: 0; /* Ensure the footer spans the full width */
