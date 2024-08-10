@@ -134,13 +134,15 @@ p {
     left: 0; /* Position the bullet */
 }
 
-.section-heading-box {
-    background-color: #e0f7fa; /* Light cyan background for headings */
-    padding: 10px 15px; /* Padding inside the box */
-    border-radius: 10px; /* Rounded corners */
-    margin-bottom: 15px; /* Space below the box */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+.experience-box, .education-box, .publications-box {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 1em; /* Space inside the box */
+    margin-bottom: 1.5em; /* Space between boxes */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border: 1px solid #b2ebf2; /* Border matching the background */
 }
+
 
 .section-heading-box h2 {
     margin: 0; /* Remove default margin from heading */
