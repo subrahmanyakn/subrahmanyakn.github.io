@@ -191,7 +191,7 @@ footer {
     font-size: 1.0em; /* Adjusted font size */
     line-height: 1.2em; /* Line height for better readability */
     width: 100%;
-    position: absolute; /* Keep the footer fixed at the bottom */
+    position: relative; /* Keep the footer fixed at the bottom */
     bottom: 0;
     left: 50%; /* Start positioning at the center */
     transform: translateX(-50%); /* Center align the footer */
