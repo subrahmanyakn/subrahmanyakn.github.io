@@ -77,6 +77,26 @@ p {
     margin-bottom: 1px; /* Adjust this value as needed */
 }
 
+.degree-box {
+    background-color: #e0f7fa; /* Light cyan background */
+    padding: 1em; /* Space inside the box */
+    margin-bottom: 1.5em; /* Space between boxes */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border: 1px solid #b2ebf2; /* Optional: Border to match the background */
+}
+
+.degree-box strong {
+    font-size: 1.2em; /* Slightly larger text for degree titles */
+}
+
+.degree-box p {
+    margin: 0.5em 0; /* Reduced margin between paragraphs */
+    line-height: 1.2; /* Line height for paragraphs */
+    font-size: 0.95em; /* Adjusted font size */
+}
+
+
 footer {
     background-color: transparent; /* Keep background color transparent */
     color: #333; /* Text color for visibility */
