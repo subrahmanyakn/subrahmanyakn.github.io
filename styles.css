@@ -184,30 +184,30 @@ p {
 }
 
 footer {
-    background-color: transparent; /* Keep background color transparent */
-    color: #333; /* Text color for visibility */
+    background-color: transparent;
+    color: #333;
     padding: 0.5em 0;
     text-align: center;
-    font-size: 1.0em; /* Adjusted font size */
-    line-height: 1.2em; /* Line height for better readability */
+    font-size: 1.0em;
+    line-height: 1.2em;
     width: 100%;
-    position: relative; /* Keep the footer fixed at the bottom */
-    bottom: 0;
-    left: 50%; /* Start positioning at the center */
-    transform: translateX(-50%); /* Center align the footer */
-    z-index: 1000; /* Keep the footer above other content */
-    margin: 0 auto; /* Center the footer */
+    position: relative; /* Change this from absolute to relative */
+    margin-top: auto; /* Ensures the footer stays at the bottom */
 }
 
 footer p {
-    margin: 0; /* Remove any default margin */
-    padding: 0; /* Remove default padding */
-    font-size: 0.8em; /* Specific footer font size */
-    max-width: 100%; /* Ensure footer content doesn't exceed screen width */
+    margin: 0 auto;
+    padding: 0;
+    font-size: 0.8em;
+    max-width: 100%;
 }
 
-
-
+@media (max-width: 600px) {
+    footer {
+        text-align: center;
+        margin-top: 1em;
+    }
+}
 
 @media only screen and (max-width: 600px) {
     .publication-list {
@@ -240,18 +240,5 @@ footer p {
         font-size: 0.9em; /* Adjust font size for smaller screens */
     }
 }
-
-@media (max-width: 600px) {
-footer {
-    position: relative; /* Change to relative position on mobile */
-    bottom: 0; /* Ensure the footer stays at the bottom */
-    left: 0; /* Align footer to the left */
-    width: 100%; /* Ensure the footer spans the full width */
-    transform: none; /* Remove centering transform */
-    margin-top: 1em; /* Add some margin to push the footer below the content */
-    z-index: 1000; /* Keep the footer above other content */
-    }
-}
-
 
 }
