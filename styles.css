@@ -120,24 +120,31 @@ p {
     font-size: 0.95em; /* Adjusted font size */
 }
 
-.experience-details {
-    list-style-type: none; /* Remove bullet points */
-    padding-left: 0; /* Remove padding */
-    margin-top: 0.5em; /* Space above the details list */
-}
-
-.experience-details li {
+/* Common bullet point style for both Experience and Education sections */
+.experience-details li,
+.degree-box ul li {
     margin-bottom: 0.5em; /* Space between list items */
     padding-left: 1em; /* Indent list items */
     position: relative; /* Positioning for the custom bullet */
+    list-style-type: none; /* Remove default bullet points */
 }
 
-.experience-details li::before {
+.experience-details li::before,
+.degree-box ul li::before {
     content: "•"; /* Custom bullet point */
     color: #ff8f00; /* Bullet color */
     position: absolute;
     left: 0; /* Position the bullet */
 }
+
+/* Styles specific to the degree box */
+.degree-box ul {
+    padding-left: 0; /* Align list with the box */
+    margin-top: 0.5em; /* Space above the details list */
+}
+
+/* Keep other existing styles for consistency */
+
 
 .experience-box, .education-box, .publications-box {
     background-color: #e0f7fa; /* Light cyan background */
