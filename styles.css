@@ -64,8 +64,8 @@ nav ul li a.active {
 }
 
 main {
-    padding: 2em;
-    max-width: 800px;
+    padding: 1em;
+    max-width: 1000px;
     margin: auto;
     text-align: justify; /* Justify text alignment for the body content */
 }
