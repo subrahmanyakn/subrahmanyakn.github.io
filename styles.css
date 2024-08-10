@@ -77,10 +77,10 @@ p {
 footer {
     background-color: transparent; /* Keep background color transparent */
     color: #333; /* Text color for visibility */
-    padding: 0.2em 0;
+    padding: 0.5em 0;
     text-align: center;
-    font-size: 0.8em; /* Reduced font size */
-    line-height: 0em; /* Adjusted line-height for less spacing */
+    font-size: 1.0em; /* Reduced font size */
+    line-height: 0.2em; /* Adjusted line-height for less spacing */
     position: relative; /* Positioned normally, stays at the bottom of the content */
     width: 100%;
     left: 0; /* Ensure the footer spans the full width */
