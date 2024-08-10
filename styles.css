@@ -191,7 +191,7 @@ footer {
     font-size: 1.0em; /* Adjusted font size */
     line-height: 0.5em; /* Adjusted line-height for less spacing */
     width: 100%;
-    position: fixed; /* Keep the footer fixed at the bottom */
+    position: absolute; /* Keep the footer fixed at the bottom */
     bottom: 0;
     left: 0; /* Ensure the footer spans the full width */
     z-index: 1000; /* Keep the footer above other content */
