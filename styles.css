@@ -96,13 +96,13 @@ p {
     font-size: 0.95em; /* Adjusted font size */
 }
 
-.experience-box {
-    background-color: #fff8e1; /* Light yellow background */
+.experience-box, .education-box, .publications-box {
+    background-color: #e0f7fa; /* Light cyan background */
     padding: 1em; /* Space inside the box */
     margin-bottom: 1.5em; /* Space between boxes */
     border-radius: 15px; /* Rounded corners */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    border: 1px solid #ffe082; /* Optional: Border to match the background */
+    border: 1px solid #b2ebf2; /* Border matching the background */
 }
 
 .experience-box strong {
