@@ -64,14 +64,14 @@ nav ul li a.active {
 }
 
 main {
-    padding: 1em;
+    padding: 0.8em;
     max-width: 1000px;
     margin: auto;
     text-align: justify; /* Justify text alignment for the body content */
 }
 
 p {
-    margin-bottom: 2px; /* Adjust this value as needed */
+    margin-bottom: 1px; /* Adjust this value as needed */
 }
 
 footer {
