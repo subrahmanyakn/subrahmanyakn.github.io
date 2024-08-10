@@ -184,16 +184,20 @@ footer {
     font-size: 1.0em; /* Adjusted font size */
     line-height: 0.5em; /* Adjusted line-height for less spacing */
     width: 100%;
-    left: 0; /* Ensure the footer spans the full width */
+    position: fixed; /* Ensure the footer spans the full width and stays at the bottom */
+    bottom: 0;
+    left: 0; /* Align footer to the left to span full width */
     z-index: 1000; /* Keeps the footer above other content */
 }
 
 footer p {
-    margin: 0; /* Removes default margin from paragraphs */
+    margin: 0 auto; /* Center the paragraph content */
     padding: 0; /* Removes default padding from paragraphs */
     line-height: 1.2em; /* Further reduce the line height within paragraphs */
     font-size: 0.8em; /* Specific footer font size */
+    max-width: 100%; /* Ensure footer content doesn't exceed screen width */
 }
+
 
 @media only screen and (max-width: 600px) {
     .publication-list {
@@ -207,16 +211,22 @@ footer p {
 
 @media (max-width: 600px) {
     nav ul {
-        flex-direction: column;
-        text-align: center;
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap */
+        justify-content: center; /* Center align items */
+        padding: 0;
+        margin: 0;
+        list-style: none;
     }
 
     nav ul li {
-        margin-bottom: 0.5em;
+        flex: 1 1 100%; /* Ensure items take full width */
+        text-align: center;
     }
 
     nav ul li a {
-        padding: 0.3em 0; /* Adjust padding */
-        font-size: 0.9em; /* Reduce font size for better fit */
+        display: block;
+        padding: 0.5em;
+        font-size: 0.9em; /* Adjust font size for smaller screens */
     }
 }
