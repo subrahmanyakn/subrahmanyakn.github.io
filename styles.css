@@ -189,22 +189,22 @@ footer {
     padding: 0.5em 0;
     text-align: center;
     font-size: 1.0em; /* Adjusted font size */
-    line-height: 0.5em; /* Adjusted line-height for less spacing */
+    line-height: 1.2em; /* Line height for better readability */
     width: 100%;
     position: absolute; /* Keep the footer fixed at the bottom */
     bottom: 0;
-    left: 50%; /* Positioning the footer to the center */
-    transform: translateX(-50%); /* Center the footer horizontally */
+    left: 50%; /* Start positioning at the center */
+    transform: translateX(-50%); /* Center align the footer */
     z-index: 1000; /* Keep the footer above other content */
 }
 
 footer p {
     margin: 0 auto; /* Center the paragraph content */
     padding: 0; /* Remove default padding from paragraphs */
-    line-height: 1.2em; /* Further reduce the line height within paragraphs */
     font-size: 0.8em; /* Specific footer font size */
     max-width: 100%; /* Ensure footer content doesn't exceed screen width */
 }
+
 
 
 
@@ -244,7 +244,9 @@ footer p {
         bottom: 0; /* Ensure the footer stays at the bottom */
         left: 0; /* Align footer to the left */
         width: 100%; /* Ensure the footer spans the full width */
+        transform: none; /* Remove centering transform */
         margin-top: 1em; /* Add some margin to push the footer below the content */
         z-index: 1000; /* Keep the footer above other content */
     }
+
 }
