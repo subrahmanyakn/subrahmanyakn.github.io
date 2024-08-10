@@ -191,19 +191,20 @@ footer {
     font-size: 1.0em; /* Adjusted font size */
     line-height: 0.5em; /* Adjusted line-height for less spacing */
     width: 100%;
-    position: fixed; /* Ensure the footer spans the full width and stays at the bottom */
+    position: fixed; /* Keep the footer fixed at the bottom */
     bottom: 0;
-    left: 0; /* Align footer to the left to span full width */
-    z-index: 1000; /* Keeps the footer above other content */
+    left: 0; /* Ensure the footer spans the full width */
+    z-index: 1000; /* Keep the footer above other content */
 }
 
 footer p {
     margin: 0 auto; /* Center the paragraph content */
-    padding: 0; /* Removes default padding from paragraphs */
+    padding: 0; /* Remove default padding from paragraphs */
     line-height: 1.2em; /* Further reduce the line height within paragraphs */
     font-size: 0.8em; /* Specific footer font size */
     max-width: 100%; /* Ensure footer content doesn't exceed screen width */
 }
+
 
 
 @media only screen and (max-width: 600px) {
@@ -235,5 +236,13 @@ footer p {
         display: block;
         padding: 0.5em;
         font-size: 0.9em; /* Adjust font size for smaller screens */
+    }
+    footer {
+        position: relative; /* Change to relative position on mobile */
+        bottom: 0; /* Ensure the footer stays at the bottom */
+        left: 0; /* Align footer to the left */
+        width: 100%; /* Ensure the footer spans the full width */
+        margin-top: 1em; /* Add some margin to push the footer below the content */
+        z-index: 1000; /* Keep the footer above other content */
     }
 }
