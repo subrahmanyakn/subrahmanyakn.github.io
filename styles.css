@@ -196,15 +196,15 @@ footer {
     left: 50%; /* Start positioning at the center */
     transform: translateX(-50%); /* Center align the footer */
     z-index: 1000; /* Keep the footer above other content */
+    margin: 0 auto; /* Center the footer */
 }
 
 footer p {
-    margin: 0 auto; /* Center the paragraph content */
-    padding: 0; /* Remove default padding from paragraphs */
+    margin: 0; /* Remove any default margin */
+    padding: 0; /* Remove default padding */
     font-size: 0.8em; /* Specific footer font size */
     max-width: 100%; /* Ensure footer content doesn't exceed screen width */
 }
-
 
 
 
