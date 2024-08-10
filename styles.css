@@ -112,7 +112,7 @@ footer {
 footer p {
     margin: 0; /* Removes default margin from paragraphs */
     padding: 0; /* Removes default padding from paragraphs */
-    line-height: 1em; /* Further reduce the line height within paragraphs */
+    line-height: 1.2em; /* Further reduce the line height within paragraphs */
     font-size: 0.8em; /* Specific footer font size */
 }
 
