@@ -51,12 +51,23 @@ footer {
     padding: 0.5em 0;
     text-align: center;
     font-size: 0.8em; /* Reduced font size */
-    position: fixed; /* Fixes the footer at the bottom of the viewport */
+    position: absolute;
     width: 100%;
     bottom: 0;
-    left: 0; /* Ensure the footer spans the full width */
-    z-index: 1000; /* Keeps the footer above other content */
+    left: 0;
+    z-index: 1000;
 }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure the body takes the full height of the viewport */
+}
+
+main {
+    flex: 1;
+}
+
 
 footer p {
     font-size: 0.8em; /* Specific footer font size */
