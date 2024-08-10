@@ -1,3 +1,4 @@
+/* General Body Styles */
 body {
     font-family: 'Roboto', monospace;
     font-size: 17px; /* Body font size */
@@ -11,15 +12,17 @@ body {
     min-height: 100vh; /* Ensures the body takes full height of the viewport */
 }
 
+/* Text Alignment */
 body, p {
     text-align: justify;
     hyphens: auto;
 }
 
+/* Header Styles */
 header {
     background-color: #2c3e50; /* Background color */
     color: white;
-    padding: 0.001em 0; /* Reduced padding for a thinner header */
+    padding: 0.5em 0; /* Padding for header */
     text-align: center;
 }
 
@@ -29,6 +32,7 @@ header h1 {
     margin: 0; /* Remove extra margin */
 }
 
+/* Navigation Styles */
 nav ul {
     list-style: none;
     padding: 0;
@@ -70,6 +74,7 @@ nav ul li a.active {
     color: #FFD700; /* Highlight color when active (Gold in this case) */
 }
 
+/* Main Content Styles */
 main {
     padding: 0.8em;
     max-width: 1000px;
@@ -82,26 +87,11 @@ p {
     margin-bottom: 1px; /* Adjust this value as needed */
 }
 
-.degree-box {
-    background-color: #e0f7fa; /* Light cyan background */
-    padding: 1em; /* Space inside the box */
-    margin-bottom: 1.5em; /* Space between boxes */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    border: 1px solid #b2ebf2; /* Optional: Border to match the background */
-}
-
-.degree-box strong {
-    font-size: 1.2em; /* Slightly larger text for degree titles */
-}
-
-.degree-box p {
-    margin: 0.5em 0; /* Reduced margin between paragraphs */
-    line-height: 1.2; /* Line height for paragraphs */
-    font-size: 0.95em; /* Adjusted font size */
-}
-
-.experience-box, .education-box, .publications-box {
+/* Degree and Experience Box Styles */
+.degree-box,
+.experience-box,
+.education-box,
+.publications-box {
     background-color: #e0f7fa; /* Light cyan background */
     padding: 1em; /* Space inside the box */
     margin-bottom: 1.5em; /* Space between boxes */
@@ -110,17 +100,19 @@ p {
     border: 1px solid #b2ebf2; /* Border matching the background */
 }
 
+.degree-box strong,
 .experience-box strong {
-    font-size: 1.2em; /* Slightly larger text for job titles */
+    font-size: 1.2em; /* Slightly larger text for titles */
 }
 
+.degree-box p,
 .experience-box p {
     margin: 0.5em 0; /* Reduced margin between paragraphs */
     line-height: 1.2; /* Line height for paragraphs */
     font-size: 0.95em; /* Adjusted font size */
 }
 
-/* Common bullet point style for both Experience and Education sections */
+/* Bullet Point Styles */
 .experience-details li,
 .degree-box ul li {
     margin-bottom: 0.5em; /* Space between list items */
@@ -137,31 +129,7 @@ p {
     left: 0; /* Position the bullet */
 }
 
-/* Styles specific to the degree box */
-.degree-box ul {
-    padding-left: 0; /* Align list with the box */
-    margin-top: 0.5em; /* Space above the details list */
-}
-
-/* Keep other existing styles for consistency */
-
-
-.experience-box, .education-box, .publications-box {
-    background-color: #e0f7fa; /* Light cyan background */
-    padding: 1em; /* Space inside the box */
-    margin-bottom: 1.5em; /* Space between boxes */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-    border: 1px solid #b2ebf2; /* Border matching the background */
-}
-
-
-.section-heading-box h2 {
-    margin: 0; /* Remove default margin from heading */
-    font-size: 1.5em; /* Adjust font size */
-    color: #00796b; /* Heading text color */
-}
-
+/* Publication List Styles */
 .publication-list {
     padding-left: 1.5em; /* Adjust padding for the list */
     counter-reset: item; /* Reset counter for custom numbering */
@@ -183,42 +151,27 @@ p {
     color: #00796b; /* Color of the number */
 }
 
+/* Footer Styles */
 footer {
-    background-color: transparent;
+    background-color: #f4f4f4; /* Background color */
     color: #333;
     padding: 0.5em 0;
-    text-align: right;
+    text-align: center;
     font-size: 1.0em;
     line-height: 1.2em;
     width: 100%;
-    position: relative; /* Change this from absolute to relative */
-    margin-top: auto; /* Ensures the footer stays at the bottom */
+    position: relative; /* Keep footer relative */
+    margin-top: auto; /* Push footer to the bottom */
 }
 
 footer p {
-    margin: 0 auto;
-    padding: 0;
-    font-size: 0.8em;
-    max-width: 100%;
+    margin: 0 auto; /* Center the paragraph content */
+    padding: 0; /* Remove default padding from paragraphs */
+    font-size: 0.8em; /* Specific footer font size */
+    max-width: 100%; /* Ensure footer content doesn't exceed screen width */
 }
 
-@media (max-width: 600px) {
-    footer {
-        text-align: center;
-        margin-top: 1em;
-    }
-}
-
-@media only screen and (max-width: 600px) {
-    .publication-list {
-        padding-left: 1em; /* Adjust padding for smaller screens */
-    }
-
-    .publication-list li::before {
-        left: -1em; /* Adjust number position for smaller screens */
-    }
-}
-
+/* Media Queries */
 @media (max-width: 600px) {
     nav ul {
         display: flex;
@@ -239,6 +192,12 @@ footer p {
         padding: 0.5em;
         font-size: 0.9em; /* Adjust font size for smaller screens */
     }
-}
 
+    .publication-list {
+        padding-left: 1em; /* Adjust padding for smaller screens */
+    }
+
+    .publication-list li::before {
+        left: -1em; /* Adjust number position for smaller screens */
+    }
 }
