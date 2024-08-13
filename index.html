@@ -171,6 +171,20 @@
         });
     });
 });
+function changeActiveLink() {
+    const sections = document.querySelectorAll('main section');
+    const navLinks = document.querySelectorAll('nav ul li a');
+    let index = sections.length;
+
+    while (--index && window.scrollY + 60 < sections[index].offsetTop) {}  // Adjust the '60' to match headerOffset
+
+    navLinks.forEach((link) => link.classList.remove('active'));
+    if (index >= 0) {
+        navLinks[index].classList.add('active');
+    }
+}
+
+window.addEventListener('scroll', changeActiveLink);
 
 </script>
 
