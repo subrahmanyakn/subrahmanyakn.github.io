@@ -59,7 +59,7 @@ h2 {
 
 .section-heading-box {
     background-color: #f1f1f1;
-    padding: 8px;
+    padding: 10px;
     margin-bottom: 10px;
 }
 
@@ -79,4 +79,12 @@ h3 {
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
+}
+section {
+    scroll-margin-top: 60px; /* Adjust this value based on your header height */
+}
+section {
+    max-width: 800px; /* or any value that fits your design */
+    margin: 0 auto; /* centers the section */
+    padding: 20px; /* adds some padding */
 }
