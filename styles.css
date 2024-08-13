@@ -86,5 +86,5 @@ section {
     padding: 20px; /* adds some padding */
 }
 section {
-    scroll-margin-top: 20px; /* Adjust this value based on your header height */
+    scroll-margin-top: 0px; /* Adjust this value based on your header height */
 }
