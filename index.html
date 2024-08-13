@@ -12,7 +12,7 @@
         <h1>Subrahmanya Keremane Narayan</h1>
         <nav>
             <ul>
-                <li><a href="#" id="home-link" class="active">Home</a></li>
+                 <li><a href="#Home" class="active">Home</a></li>
                 <li><a href="#Education">Education</a></li>
                 <li><a href="#Experience">Experience</a></li>
                 <li><a href="#Publications">Publications</a></li>
@@ -153,31 +153,48 @@
         </section>
     </main>
     <script>
-   document.querySelectorAll('nav ul li a').forEach(anchor => {
+document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 
         const targetId = this.getAttribute('href').substring(1);  // Get the target section's ID
-        const targetElement = document.getElementById(targetId);  // Get the target section element
 
-        // Calculate the position to scroll to, adjusting for the fixed header
-        const headerOffset = 60;  // Adjust this based on your header height
-        const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-        const offsetPosition = elementPosition - headerOffset;
+        if (targetId === "Home" || targetId === "") {
+            // If "Home" is clicked, scroll to the top without changing the URL
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+            history.pushState(null, null, ' ');  // Remove the hash from the URL
+        } else {
+            const targetElement = document.getElementById(targetId);  // Get the target section element
 
-        // Smooth scroll to the calculated position
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: "smooth"
+            // Calculate the position to scroll to, adjusting for the fixed header
+            const headerOffset = 60;  // Adjust this based on your header height
+            const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+            const offsetPosition = elementPosition - headerOffset;
+
+            // Smooth scroll to the calculated position
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+            });
+        }
+
+        // Highlight the active link
+        document.querySelectorAll('nav ul li a').forEach(link => {
+            link.classList.remove('active');  // Remove active class from all links
         });
+        this.classList.add('active');  // Add active class to the clicked link
     });
 });
+
 function changeActiveLink() {
     const sections = document.querySelectorAll('main section');
     const navLinks = document.querySelectorAll('nav ul li a');
     let index = sections.length;
 
-    while (--index && window.scrollY + 70 < sections[index].offsetTop) {}  // Adjust the '60' to match headerOffset
+    while (--index && window.scrollY + 70 < sections[index].offsetTop) {}  // Adjust the '70' to match headerOffset
 
     navLinks.forEach((link) => link.classList.remove('active'));
     if (index >= 0) {
@@ -186,6 +203,7 @@ function changeActiveLink() {
 }
 
 window.addEventListener('scroll', changeActiveLink);
+
 
 </script>
 
