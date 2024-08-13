@@ -81,7 +81,7 @@ html {
     scroll-behavior: smooth;
 }
 section {
-    scroll-margin-top: 60px; /* Adjust this value based on your header height */
+    scroll-margin-top: 10px; /* Adjust this value based on your header height */
 }
 section {
     max-width: 800px; /* or any value that fits your design */
