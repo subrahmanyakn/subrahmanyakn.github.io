@@ -1,100 +1,82 @@
-/* General Body Styles */
 body {
-    font-family: 'Roboto', monospace;
-    font-size: 17px;
-    line-height: 1.2;
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
-/* Sticky Header Styles */
 header {
-    background-color: #2c3e50;
-    color: white;
-    padding: 0.5em 0;
+    background: #333;
+    color: #fff;
+    padding: 10px 0;
     text-align: center;
     position: sticky;
     top: 0;
-    z-index: 1000; /* Ensures header stays on top */
+    z-index: 1000;
 }
 
-header h1 {
-    font-size: 1.5em;
-    line-height: 1;
-    margin: 0;
-}
-
-/* Navigation Styles */
 nav ul {
-    list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+    list-style: none;
+    background: #444;
 }
 
 nav ul li {
-    margin: 0 1em;
+    display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    padding-bottom: 0.5em;
-    position: relative;
+    padding: 5px 10px;
 }
 
-nav ul li a::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: transparent;
-    left: 0;
-    bottom: -5px;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.25s ease-out;
+nav ul li a.active, nav ul li a:hover {
+    background: #666;
+    border-radius: 5px;
 }
 
-nav ul li a:hover::after,
-nav ul li a.active::after {
-    transform: scaleX(1); /* Makes underline visible on hover or active */
-    background-color: #FFD700;
-}
-
-nav ul li a.active {
-    color: #FFD700;
-}
-
-/* Main Content Styles */
 main {
-    padding: 0.8em;
-    max-width: 1000px;
-    margin: auto;
-    text-align: justify;
-    flex: 1;
+    padding: 20px;
 }
 
-/* Table Styles */
-.education-table, .experience-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 2em;
+h2 {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-.education-table th, .experience-table th, 
-.education-table td, .experience-table td {
-    padding: 0.75em;
-    border: 1px solid #ddd;
-    text-align: left;
+.education-row, .experience-row, .publication-list li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
 }
 
-.education-table tr:nth-child(even), 
-.experience-table tr:nth-child(even) {
-    background-color: #f2f2f2;
+.education-row:nth-child(even), .experience-row:nth-child(even), .publication-list li:nth-child(even) {
+    background-color: #e0e0e0;
+}
+
+.section-heading-box {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+ol {
+    padding-left: 20px;
+}
+
+h3 {
+    margin-top: 30px;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
