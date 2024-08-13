@@ -56,27 +56,24 @@
         <section id="Experience">
             <h2>Professional Experience</h2>
             <div class="experience-row">
-                <strong>Position:</strong> Assistant Professor [Aug 2017 -- Present]<br>
-                <strong>Institution:</strong> RV College of Engineering, Bengaluru, Karnataka<br>
-                <strong>Responsibilities:</strong> 
+                <strong>Assistant Professor [Aug 2017 -- Present]</strong> <br>
+                <em>RV College of Engineering, Bengaluru, Karnataka</em> <br>
                 <ul>
                     <li>Conducted research on photonic devices, supervised undergraduate projects, published papers in reputed journals.</li>
                     <li>Executed consultancy project on “Reliability Testing of RPi” in association with TE Connectivity, Pune.</li>
                 </ul>
             </div>
             <div class="experience-row">
-                <strong>Position:</strong> Assistant Professor [Mar 2014 -- Aug 2017]<br>
-                <strong>Institution:</strong> Gogte Institute of Technology, Belagavi, Karnataka<br>
-                <strong>Responsibilities:</strong> 
+                <strong>Assistant Professor [Mar 2014 -- Aug 2017]</strong> <br>
+                <em>Gogte Institute of Technology, Belagavi, Karnataka</em> <br>
                 <ul>
                     <li>Guided 3 PG and 3 UG projects, including 1 UG project titled A novel artificial neural network to detect chlorine residual in water distributed system sponsored by KSCST during 2014-15.</li>
                     <li>Mentored a project titled Enhancement of automobile fuel efficiency using microcontrollers sponsored by Dept. of IT and BT, Govt. of Karnataka funded with Rs. 3Lac, which eventually culminated in a student patent.</li>
                 </ul>
             </div>
             <div class="experience-row">
-                <strong>Position:</strong> Senior Engineer [Sep 2010 -- Feb 2014]<br>
-                <strong>Company:</strong> L.G. Electronics India Pvt. Ltd., Pune, Maharashtra<br>
-                <strong>Responsibilities:</strong>  
+                <strong>Senior Engineer [Sep 2010 -- Feb 2014]</strong> <br>
+                <em>L.G. Electronics India Pvt. Ltd., Pune, Maharashtra</em> <br>
                 <ul>
                     <li>Supervised the creation and orientation of BOM (Bill of Materials) using GERP, and led the new product introduction process.</li>
                     <li>Conducted failure analysis and troubleshooting for consumer electronics, and executed qualification plans for component sourcing, resulting in cost savings.</li>
@@ -84,8 +81,7 @@
             </div>
             <div class="experience-row">
                 <strong>Project Trainee [May 2009 -- Dec 2009]<br>
-                <strong>Company:</strong> LRDE, DRDO, Bengaluru, Karnataka<br>
-                <strong>Responsibilities:</strong>  
+                <em> LRDE, DRDO, Bengaluru, Karnataka</em><br>
                 <ul>
                     <li>Completed a project titled Multiple-Input Multiple-Output (MIMO) Radar: Detection of slow moving targets.</li>
                     <li>Initial successful implementation of radar application to simulate a practical channel characterized by Weibull-distributed clutter, focusing on slow-moving targets.</li>
@@ -152,5 +148,22 @@
             </ul>
         </section>
     </main>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const navLinks = document.querySelectorAll('nav ul li a');
+        const sections = document.querySelectorAll('main section');
+
+        function changeActiveLink() {
+            let index = sections.length;
+            while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+            navLinks.forEach((link) => link.classList.remove('active'));
+            navLinks[index].classList.add('active');
+        }
+        
+        changeActiveLink();
+        window.addEventListener('scroll', changeActiveLink);
+    });
+</script>
+
 </body>
 </html>
