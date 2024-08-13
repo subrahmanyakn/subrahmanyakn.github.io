@@ -80,3 +80,11 @@ h3 {
 html {
     scroll-behavior: smooth;
 }
+section {
+    max-width: 800px; /* or any value that fits your design */
+    margin: 0 auto; /* centers the section */
+    padding: 20px; /* adds some padding */
+}
+section {
+    scroll-margin-top: 60px; /* Adjust this value based on your header height */
+}
