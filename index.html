@@ -151,22 +151,5 @@
             </ul>
         </section>
     </main>
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('nav ul li a');
-        const sections = document.querySelectorAll('main section');
-
-        function changeActiveLink() {
-            let index = sections.length;
-            while(--index && window.scrollY  < sections[index].offsetTop) {}
-            navLinks.forEach((link) => link.classList.remove('active'));
-            navLinks[index].classList.add('active');
-        }
-        
-        changeActiveLink();
-        window.addEventListener('scroll', changeActiveLink);
-    });
-</script>
-
 </body>
 </html>
