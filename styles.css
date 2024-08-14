@@ -70,6 +70,17 @@ a {
     text-decoration: none !important; /* Force remove underline on hover */
 }
 
+.doi-link {
+    color: #d9534f; /* Your desired color for the DOI link */
+    font-weight: bold; /* Make the DOI link bold */
+    text-decoration: none; /* Add underline specifically for DOI links */
+}
+
+.doi-link:hover {
+    color: #c9302c; /* A darker shade on hover */
+    text-decoration: none; /* Ensure underline persists on hover */
+}
+
 .education-row, .experience-row, .publication-list li {
     background-color: #f9f9f9;
     padding: 10px;
