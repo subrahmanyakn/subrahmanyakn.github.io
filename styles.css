@@ -1,4 +1,4 @@
-body {
+/*body {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.6;
     text-align: justify;
@@ -16,6 +16,36 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000;
+}*/
+
+/* Global styles */
+body {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0; /* Remove default margins */
+    padding: 0;
+    background-color: #f9fbfd;
+    color: #333333;
+    width: 100%; /* Ensure body takes full width */
+}
+
+/* Main container for content */
+main {
+    padding: 20px;
+    margin-left: 240px; /* Space for the profile container */
+    margin-right: 30px; /* Adjust right margin for desktop */
+    width: calc(100% - 270px); /* Full width minus margins */
+    box-sizing: border-box; /* Include padding/margin in width calculation */
+}
+
+/* Content wrapper */
+.content-wrapper {
+    margin: 0 auto; /* Center content */
+    padding: 0; /* Remove padding */
+    max-width: 100%; /* Allow content to use full width */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Ensure padding and margins don't affect width */
 }
 
 nav ul {
@@ -132,12 +162,12 @@ a {
     text-decoration: none;
 }
 
-.content-wrapper {
+/*.content-wrapper {
     margin: 0 20px; /* 20px margin on both sides */
     max-width: 1200px; /* Optional: limit the width of content */
     margin-left: auto; /* Center content */
     margin-right: auto; /* Center content */
-}
+}*/
 
 /* Media query for mobile devices */
 @media (max-width: 768px) {
