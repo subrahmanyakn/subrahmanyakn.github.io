@@ -2,11 +2,12 @@ body {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.6;
     text-align: justify;
-    margin: 0;
+    margin: 0 20px; /* 20px margin on left and right */
     padding: 0;
     background-color: #f9fbfd;
     color: #333333;
 }
+
 
 header {
     background: #f1f1f1;
@@ -112,8 +113,10 @@ ul, ol {
 
 main {
     padding: 20px;
-    margin-left: 230px; /* Ensure there's space for the profile container */
+    margin-left: 230px; /* Leave space for the profile container */
+    margin-right: 30px; /* Adjust right margin */
 }
+
 
 h2 {
     border-bottom: 2px solid #ddd;
@@ -125,6 +128,14 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.content-wrapper {
+    margin: 0 20px; /* 20px margin on both sides */
+    max-width: 1200px; /* Optional: limit the width of content */
+    margin-left: auto; /* Center content */
+    margin-right: auto; /* Center content */
+}
+
 
 @media (max-width: 768px) {
     .profile-container {
