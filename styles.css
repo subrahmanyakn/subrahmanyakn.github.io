@@ -150,14 +150,13 @@ a {
     main {
         margin-left: 0; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
-        padding: 0 5px; /* Further reduce padding to increase content width */
+        padding: 0; /* Remove padding to increase content width */
     }
 
     .content-wrapper {
-        margin-left: 0px; /* Further reduce left margin */
-        margin-right: 0px; /* Further reduce right margin */
+        margin: 0; /* Remove all margins */
         padding: 0; /* Remove padding */
-        max-width: none; /* Remove any max-width to allow full width */
+        max-width: 100%; /* Ensure full width */
     }
 }
 
@@ -167,8 +166,8 @@ a {
     }
 
     .content-wrapper {
-        margin-left: 2px; /* Minimal left margin */
-        margin-right: 2px; /* Minimal right margin */
+        margin: 0; /* Remove all margins */
+        padding: 0; /* Remove padding */
     }
 }
 
@@ -178,8 +177,8 @@ a {
     }
 
     .content-wrapper {
-        margin-left: 1px; /* Minimal left margin */
-        margin-right: 1px; /* Minimal right margin */
+        margin: 0; /* Remove all margins */
+        padding: 0; /* Remove padding */
     }
 }
 
