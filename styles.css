@@ -52,6 +52,16 @@ h2 {
     margin-bottom: 20px;
 }
 
+.supervisor-link {
+    color: #0077cc; /* Your desired color */
+    text-decoration: none; /* Removes the underline */
+}
+
+.supervisor-link:hover {
+    color: #005f99; /* Darker shade for hover */
+    text-decoration: none; /* Ensures underline doesn't appear on hover */
+}
+
 .education-row, .experience-row, .publication-list li {
     background-color: #f9f9f9;
     padding: 10px;
