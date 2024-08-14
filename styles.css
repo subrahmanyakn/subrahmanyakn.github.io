@@ -8,7 +8,6 @@ body {
     color: #333333;
 }
 
-
 header {
     background: #f1f1f1;
     color: #333;
@@ -48,19 +47,19 @@ nav ul li a.active, nav ul li a:hover {
     position: fixed;
     top: 120px; /* Adjusted to be below the header */
     left: 30px;
-    padding: 10px;
+    padding: 20px;
     background-color: #f1f1f1;
     border-right: 2px solid #ddd;
     z-index: 1000;
-    max-width: 200px;
+    max-width: 220px;
+    text-align: center; /* Center-align content */
 }
 
 .profile-photo {
-    width: 150px; 
-    border-radius: 60%;
-    left: 10px;
+    width: 180px; /* Increased size */
+    border-radius: 50%; /* Make it a perfect circle */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .contact-info {
@@ -118,10 +117,9 @@ ul, ol {
 
 main {
     padding: 20px;
-    margin-left: 230px; /* Leave space for the profile container */
+    margin-left: 240px; /* Leave space for the profile container */
     margin-right: 30px; /* Adjust right margin */
 }
-
 
 h2 {
     border-bottom: 2px solid #ddd;
@@ -141,6 +139,20 @@ a {
     margin-right: auto; /* Center content */
 }
 
+@media (max-width: 768px) {
+    .profile-container {
+        position: static; /* Change to static position for mobile */
+        max-width: none; /* Allow full width */
+        margin-bottom: 20px; /* Add space below profile */
+        border-right: none; /* Remove the border */
+        text-align: center; /* Center-align content */
+    }
+
+    main {
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
 @media (max-width: 400px) {
     .content-wrapper {
         padding: 10px;  /* Add padding to prevent content from touching the edges */
@@ -152,29 +164,18 @@ a {
         align-items: center;
     }
 
-    .profile-container img {
-        max-width: 100px;  /* Scale the profile photo down */
-        margin-bottom: 10px;  /* Add space between the photo and the text */
-    }
-
-    .profile-container .content {
-        text-align: center;  /* Center the text content */
-        padding: 10px;  /* Add padding around the text */
-    }
-
-    .body-content {
-        padding: 10px;
-        margin-top: 10px;
+    .profile-photo {
+        width: 120px; /* Scale down for small screens */
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 480px) {
-    .profile-container img {
-        max-width: 80px;  /* Further scale down for very small screens */
+    .profile-photo {
+        width: 100px; /* Further scale down for very small screens */
     }
 
     .body-content {
         padding: 8px;
     }
 }
-
