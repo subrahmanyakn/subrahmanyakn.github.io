@@ -4,13 +4,13 @@ body {
     text-align: justify;
     margin: 0;
     padding: 0;
-    background-color: #f9fbfd; /* Light blue background for the body */
-    color: #333333; /* Dark grey text color */
+    background-color: #f9fbfd;
+    color: #333333;
 }
 
 header {
-    background: #f1f1f1; /* Soft light grey background */
-    color: #333; /* Dark grey text */
+    background: #f1f1f1;
+    color: #333;
     padding: 10px 0;
     text-align: center;
     position: sticky;
@@ -23,25 +23,26 @@ nav ul {
     margin: 0;
     list-style: none;
     background: #2c3e50;
-    text-align: center; /* Center-align the navigation menu */
+    text-align: center;
 }
 
 nav ul li {
-    display: inline-block; /* Use inline-block to display tabs horizontally */
-    margin-right: 10px; /* Add spacing between tabs */
+    display: inline-block;
+    margin-right: 10px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    padding: 10px 15px; /* Increase padding for better clickable area */
-    display: block; /* Ensure the link fills the entire li */
+    padding: 10px 15px;
+    display: block;
 }
 
 nav ul li a.active, nav ul li a:hover {
     background: #8ac6d1;
     border-radius: 5px;
 }
+
 main {
     padding: 20px;
 }
@@ -52,14 +53,21 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Global link reset to avoid conflicts */
+a {
+    text-decoration: none; /* Ensure no underline globally */
+    color: inherit; /* Inherit color from parent */
+}
+
+/* Specific supervisor link styling */
 .supervisor-link {
-    color: #0077cc; /* Your desired color */
-    text-decoration: none; /* Removes the underline */
+    color: #0077cc; /* Desired color */
+    text-decoration: none !important; /* Force remove underline */
 }
 
 .supervisor-link:hover {
-    color: #005f99; /* Darker shade for hover */
-    text-decoration: none; /* Ensures underline doesn't appear on hover */
+    color: #005f99;
+    text-decoration: none !important; /* Force remove underline on hover */
 }
 
 .education-row, .experience-row, .publication-list li {
@@ -99,8 +107,5 @@ section {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-}
-
-section {
     scroll-margin-top: 10px;
 }
