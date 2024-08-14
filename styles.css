@@ -154,8 +154,8 @@ a {
     }
 
     .content-wrapper {
-        margin-left: 5px; /* Further reduce left margin */
-        margin-right: 5px; /* Further reduce right margin */
+        margin-left: 0px; /* Further reduce left margin */
+        margin-right: 0px; /* Further reduce right margin */
         padding: 0; /* Remove padding */
         max-width: none; /* Remove any max-width to allow full width */
     }
