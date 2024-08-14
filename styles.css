@@ -139,47 +139,44 @@ a {
     margin-right: auto; /* Center content */
 }
 
+/* Media query for mobile devices */
 @media (max-width: 768px) {
-    .profile-container {
-        position: static; /* Keep position static */
-        margin: 0 auto 20px; /* Center the profile container */
-        max-width: 100%; /* Allow full width */
-        padding: 10px; /* Adjust padding */
-    }
-
     main {
-        margin-left: 0; /* Remove left margin */
-        margin-right: 0; /* Remove right margin */
-        padding: 0; /* Remove padding to increase content width */
+        margin-left: 0; /* Remove left margin on mobile */
+        margin-right: 0; /* Remove right margin on mobile */
+        padding: 10px; /* Adjust padding */
+        width: 100%; /* Ensure main content takes full width */
     }
 
     .content-wrapper {
-        margin: 0; /* Remove all margins */
+        margin: 0; /* Remove margins */
         padding: 0; /* Remove padding */
-        max-width: 100%; /* Ensure full width */
+        width: 100%; /* Full width */
+    }
+
+    .profile-container {
+        position: static; /* Remove fixed positioning */
+        margin: 0 auto 20px; /* Center and add margin below */
+        width: 100%; /* Full width on mobile */
+        max-width: 100%; /* Ensure it doesn't exceed screen width */
+        padding: 10px; /* Add padding */
+    }
+
+    .profile-photo {
+        width: 150px; /* Adjust photo size */
+        margin: 0 auto; /* Center the photo */
     }
 }
 
 @media (max-width: 480px) {
     .profile-photo {
-        width: 150px; /* Adjust size for smaller screens */
-    }
-
-    .content-wrapper {
-        margin: 0; /* Remove all margins */
-        padding: 0; /* Remove padding */
+        width: 130px; /* Further adjust size for small screens */
     }
 }
 
 @media (max-width: 400px) {
     .profile-photo {
-        width: 130px; /* Adjust size for very small screens */
-    }
-
-    .content-wrapper {
-        margin: 0; /* Remove all margins */
-        padding: 0; /* Remove padding */
+        width: 120px; /* Further adjust size for very small screens */
     }
 }
-
 
