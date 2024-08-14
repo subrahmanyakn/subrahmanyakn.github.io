@@ -141,7 +141,7 @@ a {
     margin-right: auto; /* Center content */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
     .content-wrapper {
         padding: 10px;  /* Add padding to prevent content from touching the edges */
     }
