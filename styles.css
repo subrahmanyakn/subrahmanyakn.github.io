@@ -141,22 +141,23 @@ a {
 
 @media (max-width: 768px) {
     .profile-container {
-        position: static; /* Remove fixed position for mobile */
-        margin: 0 auto 20px; /* Center the profile container and add space below */
-        max-width: 100%; /* Allow full width for the profile container */
+        position: static; /* Keep position static */
+        margin: 0 auto 20px; /* Center the profile container */
+        max-width: 100%; /* Allow full width */
         padding: 10px; /* Adjust padding */
     }
 
     main {
         margin-left: 0; /* Remove left margin */
         margin-right: 0; /* Remove right margin */
-        padding: 0 10px; /* Add padding to the main content */
+        padding: 0 5px; /* Further reduce padding to increase content width */
     }
 
     .content-wrapper {
-        margin-left: 10px; /* Reduce left margin */
-        margin-right: 10px; /* Reduce right margin */
+        margin-left: 5px; /* Further reduce left margin */
+        margin-right: 5px; /* Further reduce right margin */
         padding: 0; /* Remove padding */
+        max-width: none; /* Remove any max-width to allow full width */
     }
 }
 
@@ -166,8 +167,8 @@ a {
     }
 
     .content-wrapper {
-        margin-left: 5px; /* Further reduce left margin */
-        margin-right: 5px; /* Further reduce right margin */
+        margin-left: 2px; /* Minimal left margin */
+        margin-right: 2px; /* Minimal right margin */
     }
 }
 
@@ -177,8 +178,9 @@ a {
     }
 
     .content-wrapper {
-        margin-left: 2px; /* Minimal left margin */
-        margin-right: 2px; /* Minimal right margin */
+        margin-left: 1px; /* Minimal left margin */
+        margin-right: 1px; /* Minimal right margin */
     }
 }
+
 
