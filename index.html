@@ -208,7 +208,7 @@ function changeActiveLink() {
     const navLinks = document.querySelectorAll('nav ul li a');
     let index = sections.length;
 
-    while (--index && window.scrollY + 100 < sections[index].offsetTop) {}  // Adjust the '70' to match headerOffset
+    while (--index && window.scrollY + 120 < sections[index].offsetTop) {}  // Adjust the '70' to match headerOffset
 
     navLinks.forEach((link) => link.classList.remove('active'));
     if (index >= 0) {
