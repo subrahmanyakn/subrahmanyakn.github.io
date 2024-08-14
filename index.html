@@ -184,7 +184,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
             const targetElement = document.getElementById(targetId);  // Get the target section element
 
             // Calculate the position to scroll to, adjusting for the fixed header
-            const headerOffset = 80;  // Adjust this based on your header height
+            const headerOffset = 50;  // Adjust this based on your header height
             const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
             const offsetPosition = elementPosition - headerOffset;
 
