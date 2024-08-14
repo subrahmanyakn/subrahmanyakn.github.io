@@ -209,7 +209,7 @@ function changeActiveLink() {
     let index = sections.length;
 
     // Calculate which section is currently in view
-    while (--index && window.scrollY + 80 < sections[index].offsetTop) {}  // Adjust the '100' to match headerOffset
+    while (--index && window.scrollY + 100 < sections[index].offsetTop) {}  // Adjust the '100' to match headerOffset
 
     navLinks.forEach((link) => link.classList.remove('active'));
     if (index >= 0) {
