@@ -184,7 +184,7 @@ document.querySelectorAll('nav ul li a').forEach(anchor => {
             const targetElement = document.getElementById(targetId);  // Get the target section element
 
             // Calculate the position to scroll to, adjusting for the fixed header
-            const headerOffset = 60;  // Adjust this based on your header height
+            const headerOffset = 80;  // Adjust this based on your header height
             const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
             const offsetPosition = elementPosition - headerOffset;
 
@@ -208,7 +208,7 @@ function changeActiveLink() {
     const navLinks = document.querySelectorAll('nav ul li a');
     let index = sections.length;
 
-    while (--index && window.scrollY + 120 < sections[index].offsetTop) {}  // Adjust the '70' to match headerOffset
+    while (--index && window.scrollY + 100 < sections[index].offsetTop) {}  // Adjust the '70' to match headerOffset
 
     navLinks.forEach((link) => link.classList.remove('active'));
     if (index >= 0) {
