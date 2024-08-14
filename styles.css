@@ -12,7 +12,7 @@ body {
 header {
     background: #f1f1f1;
     color: #333;
-    padding: 20px 0;
+    padding: 10px 0;
     text-align: center;
     position: sticky;
     top: 0;
@@ -46,8 +46,8 @@ nav ul li a.active, nav ul li a:hover {
 
 .profile-container {
     position: fixed;
-    top: 80px; /* Adjusted to be below the header */
-    left: 20px;
+    top: 120px; /* Adjusted to be below the header */
+    left: 30px;
     padding: 10px;
     background-color: #f1f1f1;
     border-right: 2px solid #ddd;
@@ -57,7 +57,8 @@ nav ul li a.active, nav ul li a:hover {
 
 .profile-photo {
     width: 150px; 
-    border-radius: 50%;
+    border-radius: 60%;
+    left: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
 }
