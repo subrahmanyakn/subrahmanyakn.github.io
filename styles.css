@@ -60,12 +60,12 @@ a {
 }
 
 .contact-link {
-    color: #0077cc; /* Set your desired link color */
+    color: #f39c12; /* Set your desired link color */
     text-decoration: none; /* Remove underline */
 }
 
 .contact-link:hover {
-    color: #005f99; /* Darker shade for hover */
+    color: #e67e22; /* Darker shade for hover */
     text-decoration: none; /* Optionally add underline on hover */
 }
 
