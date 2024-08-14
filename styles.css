@@ -91,6 +91,10 @@ nav ul li a.active, nav ul li a:hover {
     color: #4285F4;
 }
 
+.rg-link {
+    color: #34A853;
+}
+
 .education-row, .experience-row, .publication-list li {
     background-color: #f9f9f9;
     padding: 10px;
