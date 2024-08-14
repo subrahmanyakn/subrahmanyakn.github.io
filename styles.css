@@ -59,6 +59,20 @@ a {
     color: inherit; /* Inherit color from parent */
 }
 
+.contact-link {
+    color: #0077cc; /* Set your desired link color */
+    text-decoration: none; /* Remove underline */
+}
+
+.contact-link:hover {
+    color: #005f99; /* Darker shade for hover */
+    text-decoration: none; /* Optionally add underline on hover */
+}
+
+.contact-link:active {
+    color: #004080; /* Even darker shade for active state */
+}
+
 /* Specific supervisor link styling */
 .supervisor-link {
     color: #0077cc; /* Desired color */
