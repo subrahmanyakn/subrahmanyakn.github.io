@@ -43,6 +43,82 @@ nav ul li a.active, nav ul li a:hover {
     border-radius: 5px;
 }
 
+.profile-container {
+    position: absolute;
+    top: 60px; /* Adjust to be below the header */
+    left: 0;
+    padding: 10px;
+    background-color: #f1f1f1; /* Soft light grey background */
+    border-right: 2px solid #ddd; /* Optional border to separate from main content */
+    z-index: 1000; /* Ensure it stays on top */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px; /* Set a max width for the container */
+}
+
+.profile-photo {
+    width: 100px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Optional: make the photo round */
+    margin-bottom: 10px;
+}
+
+.contact-address {
+    text-align: center; /* Center-align text and links */
+}
+
+.contact-link {
+    text-decoration: none; /* Remove underline */
+    font-weight: bold; /* Make text bold */
+    display: block; /* Ensure links are block-level for spacing */
+}
+
+.email-link {
+    color: #f39c12; /* Email color (Orange) */
+}
+
+.email-link:hover {
+    color: #e67e22; /* Darker shade for hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.linkedin-link {
+    color: #0077b5; /* LinkedIn color (Blue) */
+}
+
+.linkedin-link:hover {
+    color: #005582; /* Darker shade for hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.scholar-link {
+    color: #4285F4; /* Google Scholar color (Blue) */
+}
+
+.scholar-link:hover {
+    color: #357ae8; /* Darker shade for hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-container {
+        width: 100%;
+        left: 0;
+        padding: 5px;
+    }
+
+    .profile-photo {
+        width: 80px; /* Adjust size for mobile */
+    }
+
+    .contact-address {
+        font-size: 14px; /* Adjust font size for mobile */
+    }
+}
+
+
 main {
     padding: 20px;
 }
