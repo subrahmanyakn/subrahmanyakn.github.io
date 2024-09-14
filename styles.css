@@ -91,6 +91,26 @@ nav ul li a.active, nav ul li a:hover {
     color: #4285F4;
 }
 
+/* Styling for the contact links to appear inline */
+.inline-links {
+    display: inline;
+    font-size: 0.95em; /* Adjust font size if necessary */
+}
+
+.inline-links a {
+    color: inherit; /* Keep link colors as defined earlier */
+    text-decoration: none;
+    margin-right: 10px; /* Space between links */
+}
+
+.inline-links a:last-child {
+    margin-right: 0; /* Remove margin after the last link */
+}
+
+.inline-links a:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
 .rg-link {
     color: #2ECC71;
 }
