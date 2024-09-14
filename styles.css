@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: 'Roboto Mono', monospace;
     line-height: 1.6;
@@ -43,6 +44,7 @@ nav ul li a.active, nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Profile Container Styling */
 .profile-container {
     position: fixed;
     top: 120px; /* Adjusted to be below the header */
@@ -69,16 +71,27 @@ nav ul li a.active, nav ul li a:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.contact-link, .supervisor-link, .doi-link {
-    color: #0077cc;
+/* Hyperlinks for Contact Section (inline display) */
+.inline-links {
+    display: inline; /* Ensure links appear inline */
+    font-size: 0.95em;
+}
+
+.inline-links a {
+    color: inherit; /* Maintain color as specified */
     text-decoration: none;
+    margin-right: 10px; /* Spacing between links */
 }
 
-.contact-link:hover, .supervisor-link:hover, .doi-link:hover {
-    color: #005f99;
-    text-decoration: underline;
+.inline-links a:last-child {
+    margin-right: 0; /* No margin after the last link */
 }
 
+.inline-links a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+/* Specific Link Colors */
 .email-link {
     color: #f39c12;
 }
@@ -91,30 +104,11 @@ nav ul li a.active, nav ul li a:hover {
     color: #4285F4;
 }
 
-/* Styling for the contact links to appear inline */
-.inline-links {
-    display: inline;
-    font-size: 0.95em; /* Adjust font size if necessary */
-}
-
-.inline-links a {
-    color: inherit; /* Keep link colors as defined earlier */
-    text-decoration: none;
-    margin-right: 10px; /* Space between links */
-}
-
-.inline-links a:last-child {
-    margin-right: 0; /* Remove margin after the last link */
-}
-
-.inline-links a:hover {
-    text-decoration: underline; /* Optional: underline on hover */
-}
-
 .rg-link {
     color: #2ECC71;
 }
 
+/* Section Styling */
 .education-row, .experience-row, .publication-list li {
     background-color: #f9f9f9;
     padding: 10px;
@@ -147,39 +141,41 @@ h2 {
     margin-bottom: 20px;
 }
 
+/* Links should inherit color but no underline by default */
 a {
     color: inherit;
     text-decoration: none;
 }
 
+/* Content Wrapper */
 .content-wrapper {
     margin: 0 20px; /* 20px margin on both sides */
-    max-width: 1200px; /* Optional: limit the width of content */
-    margin-left: auto; /* Center content */
-    margin-right: auto; /* Center content */
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Media query for mobile devices */
+/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
     main {
-        margin-left: 0; /* Remove left margin on mobile */
-        margin-right: 0; /* Remove right margin on mobile */
-        padding: 10px; /* Adjust padding */
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10px;
         width: 100%; /* Ensure main content takes full width */
     }
 
     .content-wrapper {
-        margin: 0; /* Remove margins */
-        padding: 0; /* Remove padding */
+        margin: 0;
+        padding: 0;
         width: 100%; /* Full width */
     }
 
     .profile-container {
-        position: static; /* Remove fixed positioning */
+        position: static;
         margin: 0 auto 20px; /* Center and add margin below */
-        width: 100%; /* Full width on mobile */
-        max-width: 100%; /* Ensure it doesn't exceed screen width */
-        padding: 10px; /* Add padding */
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
     }
 
     .profile-photo {
@@ -199,4 +195,3 @@ a {
         width: 120px; /* Further adjust size for very small screens */
     }
 }
-
